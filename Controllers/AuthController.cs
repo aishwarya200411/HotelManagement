@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using HotelBooking.Data;
-using HotelBooking.Models;
+using HotelManagement.Data;
+using HotelManagement.Models;
 using System.Linq;
 
 namespace HotelBooking.Controllers

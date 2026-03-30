@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using HotelBooking.Models;
-
-namespace HotelBooking.Data
-{
+using HotelManagement.Models;
+namespace HotelManagement.Data { 
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -13,5 +11,7 @@ namespace HotelBooking.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Room> Rooms { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Coupon> Coupons { get; set; }
     }
 }
